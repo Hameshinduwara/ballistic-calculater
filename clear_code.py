@@ -105,7 +105,7 @@ while loop:
     x1 = input("enter lenth :")
     y1=input("enter hight :")
     u1= input("enter speed :")
-    g1 = input("enter gavity :")
+    g1 =9.87
     history()
     floati()
     #print("loading //")
