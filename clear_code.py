@@ -1,3 +1,4 @@
+# not for military use speed renge (0-100ms^-1)
 def im_negetive(negative):
     xo=negative
     global yo
@@ -87,10 +88,10 @@ def reeed():
         print(detaf)
 def menusys():
     print("     /\             //|                              ")
-    print("     |            //   |             tan@            ")
-    print("     |          //      |               calculetor   ")
-    print("hight|        //         |                 in        ")
-    print("     |      //            |                   fire   ")
+    print("     |            //   |           tan@              ")
+    print("     |          //      |            ballistic       ")
+    print("hight|        //         |                 calculetor")
+    print("     |      //            |                          ")
     print("     |    // ;             |                         ")
     print("     |  // @  ;            |                         ")
     print("     \/                                              ")
@@ -122,6 +123,7 @@ while loop:
     
 
     #print("loading ////")
+    #sum time only one cone is correct
     print("total tan@ is :",tana1,mark10)
     print("or ")
     print ("total tan@ is :",tana2,mark10)
@@ -129,6 +131,8 @@ while loop:
     print("_____________________________________________________")
     print("cone is  :",cone1,mark10)
     print("cone is  :",cone2,mark10)
+    
+    print("_________sum time only one cone is correct___________")
     print("_____________________________________________________")
     print("history  :-? ")
     print("redo     :-Yes\\y")
