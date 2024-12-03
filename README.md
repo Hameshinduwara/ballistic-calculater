@@ -4,7 +4,7 @@
 <body background="https://totalshield.com/wp-content/uploads/2022/11/blog-ballistic-impact-energy-1024x657.png">
  <h1 color="red" >Ballistic-calculater</h1>
   <hr>
-  <h3> <font color="#ff00ff">welcome to my first project (2018-2024)</font></h3><a href="https://github.com/Hameshinduwara/ballistic-calculater.git">go to</a><hr><a href="https://web.facebook.com/hameshinduvara">i feel like no one like that. pleese tell me is ok/work or useless :(</a>
+  <h3> <font color="#ff00ff">welcome to my first project (2018-2024)</font></h3><a href="https://github.com/Hameshinduwara/ballistic-calculater.git">go to</a><hr><a href="https://web.facebook.com/hameshinduvara">please tell your feedback <br>pleese tell me is usefull or useless :(</a>
 <hr>
  Ballistics is the field of mechanics concerned with the launching,<br> flight behaviour and impact effects of projectiles,<br> especially ranged weapon munitions such as bullets,<br> unguided bombs, rockets or the like;<br> the science or art of designing and accelerating projectiles so as to achieve a desired performance.
   <ol type ="i"><hr>
