@@ -96,7 +96,7 @@ def menusys():
     print("     |  // @  ;            |                         ")
     print("     \/                                              ")
     print("     <--------------------->                         ")
-    print("             lenth                                   ")
+    print("             lenth                             v1.4  ")
 
     
 loop=True
