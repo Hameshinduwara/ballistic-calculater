@@ -100,7 +100,7 @@ void menusys() {
     cout << "     |    // ;             |                         " << endl;
     cout << "     |  // @  ;            |                         " << endl;
     cout << "     \\/                                              " << endl;
-    cout << "     <--------------------->                         " << endl;
+    cout << "     <--------------------->           v1.4           " << endl;
     cout << "             length                                   " << endl;
 }
 
@@ -112,11 +112,11 @@ int main() {
         menusys();
         
         double x1, y1, u1, g1 = 9.87;
-        cout << "Enter length: ";
+        cout << "Enter length<m>: ";
         cin >> x1;
-        cout << "Enter height: ";
+        cout << "Enter height<m>: ";
         cin >> y1;
-        cout << "Enter speed: ";
+        cout << "Enter speed<m/s>: ";
         cin >> u1;
 
         history(x1, y1, u1, g1);
