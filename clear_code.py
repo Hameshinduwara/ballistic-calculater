@@ -102,9 +102,9 @@ def menusys():
 loop=True
 while loop:
     menusys()
-    x1 = input("enter lenth :")
-    y1=input("enter hight :")
-    u1= input("enter speed :")
+    x1 = input("enter lenth <m> :")
+    y1=input("enter hight <m> :")
+    u1= input("enter speed <m/s>:")
     g1 =9.87
     history()
     floati()
