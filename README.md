@@ -12,5 +12,14 @@
  <b>   <il>cannons</il> <br>
     <il>games</il> <br>
     <il>challenges</il></b>
+    <hr>
+    <h4>Limitations</h4> 
+<b>Air Resistance:</b>
+
+<p>The program assumes an idealized case (no air resistance). In real-world scenarios, air drag can significantly affect the trajectory.</p>
+<b>Input Constraints:</b>
+
+Inputs must ensure that the height, initial speed, and range are physically valid. For example,<br> it’s impossible for a projectile to achieve a higher range with a slower speed unless there are other forces involved.
+
 </body>
 </html>
