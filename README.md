@@ -7,10 +7,17 @@
   <h3> <font color="#ff00ff">welcome to my first project (2022-2024)</font></h3><a href="https://github.com/Hameshinduwara/ballistic-calculater.git">go to</a><hr><a href="https://web.facebook.com/photo?fbid=1259451165330092&set=pcb.1259452985329910">please tell your feedback <br>pleese tell me is usefull or useless :(</a>
 <hr>
  Ballistics is the field of mechanics concerned with the launching,<br> flight behaviour and impact effects of projectiles,<br> especially ranged weapon munitions such as bullets,<br> unguided bombs, rockets or the like;<br> the science or art of designing and accelerating projectiles so as to achieve a desired performance.
-  <ol type ="i"><hr>
-    that will used for<br>
- <b>   <il>cannons</il> <br>
-    <il>games</il> <br>
+<hr>
+<b> <h4>in arduino</h4></b>
+  <p aligen="center">How to Use:<br>
+Connect a servo motor to the Arduino on pin 9.<br>
+Open the Serial Monitor and input values as :x y for x and 𝑦.<br>
+The servo motor will adjust to the calculated angle.</p>
+<hr>
+    that will used for<br> 
+    <ol type ="i">
+ <b>   <il>cannons</il> 
+    <il>game</il>
     <il>challenges</il></b>
     <hr>
     <h4>Limitations</h4> 
