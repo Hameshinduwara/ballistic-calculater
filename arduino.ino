@@ -1,50 +1,56 @@
-#include <iostream>
-#include <cmath>
+#include <Servo.h>
 
-using namespace std;
+Servo mortarServo;  // Servo motor controlling the mortar's angle
+const float g = 9.8;  // Acceleration due to gravity (m/s^2)
+const float u = 10.0; // Initial velocity (m/s)
 
-// Constants
-const double g = 9.8; // Gravity (m/s^2)
-const double rho = 1.225; // Air density (kg/m^3)
-const double Cd = 0.47; // Drag coefficient for a sphere
-const double A = 0.01; // Cross-sectional area (m^2)
-const double m = 0.1; // Mass (kg)
-const double dt = 0.01; // Time step (s)
-
-// Function to calculate acceleration with drag
-void update(double &vx, double &vy, double &x, double &y) {
-    double v = sqrt(vx * vx + vy * vy); // Magnitude of velocity
-    double drag = (0.5 * Cd * rho * A * v) / m; // Drag acceleration
-
-    // Update accelerations
-    double ax = -drag * vx; // Drag slows horizontal velocity
-    double ay = -g - drag * vy; // Gravity + drag slows vertical velocity
-
-    // Update velocities
-    vx += ax * dt;
-    vy += ay * dt;
-
-    // Update positions
-    x += vx * dt;
-    y += vy * dt;
+void setup() {
+  Serial.begin(9600);
+  mortarServo.attach(9); // Connect servo to pin 9
+  Serial.println("Enter values for x (horizontal) and y (vertical):");
 }
 
-int main() {
-    // Initial conditions
-    double v0 = 50.0; // Initial velocity (m/s)
-    double angle = 45.0; // Launch angle (degrees)
-    double vx = v0 * cos(angle * M_PI / 180); // Initial horizontal velocity
-    double vy = v0 * sin(angle * M_PI / 180); // Initial vertical velocity
-    double x = 0.0, y = 0.0; // Initial position
+void loop() {
+  if (Serial.available() > 0) {
+    float x = Serial.parseFloat(); // Read horizontal distance
+    float y = Serial.parseFloat(); // Read vertical height
 
-    // Simulate motion
-    cout << "Time\tX\tY" << endl;
-    double t = 0.0;
-    while (y >= 0.0) { // Stop when the projectile hits the ground
-        cout << t << "\t" << x << "\t" << y << endl;
-        update(vx, vy, x, y);
-        t += dt;
+    // Calculate angles
+    float angle1, angle2;
+    bool success = calculateAngles(x, y, angle1, angle2);
+
+    if (success) {
+      Serial.print("Low angle: ");
+      Serial.println(angle1);
+      Serial.print("High angle: ");
+      Serial.println(angle2);
+
+      // Set servo to the low angle
+      mortarServo.write(angle1); // Send the low angle to the servo
+      delay(2000);               // Wait 2 seconds before resetting
+    } else {
+      Serial.println("Target unreachable with given parameters.");
     }
-
-    return 0;
+  }
 }
+
+// Function to calculate angles
+bool calculateAngles(float x, float y, float &angle1, float &angle2) {
+  float u2 = u * u;
+  float discriminant = u2 * u2 - g * (g * x * x + 2 * y * u2);
+
+  if (discriminant < 0) {
+    return false; // No solution
+  }
+
+  float sqrtDisc = sqrt(discriminant);
+  float tanTheta1 = (u2 + sqrtDisc) / (g * x);
+  float tanTheta2 = (u2 - sqrtDisc) / (g * x);
+
+  // Convert to degrees
+  angle1 = atan(tanTheta1) * 180 / PI;
+  angle2 = atan(tanTheta2) * 180 / PI;
+
+  return true;
+}
+
