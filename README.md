@@ -2,7 +2,7 @@
   
   
 <body background="https://totalshield.com/wp-content/uploads/2022/11/blog-ballistic-impact-energy-1024x657.png">
- <h1 color="red" >Ballistic-calculater</h1>
+ <h1 color="red" >Ballistic-calculator</h1>
   <hr>
  <a href="https://github.com/Hameshinduwara/ballistic-calculater.git">go to</a><hr><a href="https://web.facebook.com/photo?fbid=1259451165330092&set=pcb.1259452985329910">please tell your feedback <br>pleese tell me is usefull or useless :(</a>
 <hr>
