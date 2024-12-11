@@ -14,13 +14,9 @@ Connect a servo motor to the Arduino on pin 9.<br>
 Open the Serial Monitor and input values as :x y for x and 𝑦.<br>
 The servo motor will adjust to the calculated angle.</p>
 <hr>
-    that will used for<br> 
-    <ol type ="i">
- <b>   <il>cannons</il> 
-    <il>game</il>
-    <il>challenges</il></b>
-    <hr>
-    <h4>Limitations</h4> 
+   
+  
+<h4>Limitations</h4> 
 <b>Air Resistance:</b>
 
 <p>The program assumes an idealized case (no air resistance). In real-world scenarios, air drag can significantly affect the trajectory.</p>
