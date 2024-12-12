@@ -47,11 +47,9 @@ def fomula():
     tan_c_up =-x+mula
     tan_c_down = 2*a
     tan_c = tan_c_up/tan_c_down
-    #print("loading //////")
     #tan 90-c
     tan_c90_up =-x-mula
     tan_c90=tan_c90_up/tan_c_down
-    #print("loading ///////")
     return tan_c
 
 def floati():
@@ -64,17 +62,39 @@ def floati():
     u=float(u1)
     g=float(g1)
 
-def cone():
+def tanatoa():
     import math
     global tana1
     global tana2
     global cone1
     global cone2
+    global theta_in_radians1
+    global theta_in_radians2
+    # Example: Given tan(theta) , find theta
+    tan_value1 = fomula()
     tana1=fomula()
+    theta_in_radians1 = math.atan(tan_value1)
+    # Convert radians to degrees if needed
+    cone1 = math.degrees(theta_in_radians1)
+    # Example: Given tan(theta) , find theta
+    tan_value2 = tan_c90
     tana2=tan_c90
-    cone1=math.tan(tan_c90)/3.141592653589793*90
-    cone2=math.tan(fomula())/3.141592653589793*90
+    theta_in_radians2 = math.atan(tan_value2)
+    # Convert radians to degrees if needed
+    cone2 = math.degrees(theta_in_radians2)
 
+
+#avoide wrong dergrees
+def null():
+    global tana1
+    global tana2
+    global cone1
+    global cone2
+    if tana1 < 0 :
+        cone1="null"
+    if tana2 < 0 :
+        cone2="null"
+    
 def history():
     global f
     global filedeta
@@ -96,7 +116,7 @@ def menusys():
     print("     |  // @  ;            |                         ")
     print("     \/                                              ")
     print("     <--------------------->                         ")
-    print("             lenth                             v1.4  ")
+    print("             lenth                             v1.5  ")
 
     
 loop=True
@@ -113,7 +133,8 @@ while loop:
     A()
     #print("loading ///")
     C()
-    cone()
+    tanatoa()
+    null()
     #runbreak()
     if mark10 == "i":
         print("wrong claculetion --------------------------------")
