@@ -4,7 +4,7 @@
 <body background="https://totalshield.com/wp-content/uploads/2022/11/blog-ballistic-impact-energy-1024x657.png">
  <h1 color="red" >Ballistic-calculator</h1>
   <hr>
- <a href="https://github.com/Hameshinduwara/ballistic-calculater.git">go to</a><hr><a href="https://web.facebook.com/photo?fbid=1259451165330092&set=pcb.1259452985329910">please tell your feedback <br>pleese tell me is usefull or useless :(</a>
+
 <hr>
  Ballistics is the field of mechanics concerned with the launching,<br> flight behaviour and impact effects of projectiles,<br> especially ranged weapon munitions such as bullets,<br> unguided bombs, rockets or the like;<br> the science or art of designing and accelerating projectiles so as to achieve a desired performance.
 <hr>
@@ -12,9 +12,11 @@
   <p aligen="center">How to Use:<br>
 Connect a servo motor to the Arduino on pin 9.<br>
 Open the Serial Monitor and input values as :x y for x and 𝑦.<br>
-The servo motor will adjust to the calculated angle.</p>
+The servo motor will adjust to the calculated angle.</p> <a href="https://github.com/Hameshinduwara/ballistic-calculater.git">go to</a>
 <hr>
-   
+## 📜 License
+
+This repository and its contents are licensed under the **https://github.com/Hameshinduwara/ballistic-calculater?tab=Apache-2.0-1-ov-file# (LICENSE)** unless stated otherwise.   
   
 <h4>Limitations</h4> 
 <b>Air Resistance:</b>
@@ -23,6 +25,6 @@ The servo motor will adjust to the calculated angle.</p>
 <b>Input Constraints:</b>
 
 Inputs must ensure that the height, initial speed, and range are physically valid. For example,<br> it’s impossible for a projectile to achieve a higher range with a slower speed unless there are other forces involved.
-
+<hr><a href="https://web.facebook.com/photo?fbid=1259451165330092&set=pcb.1259452985329910">please tell your feedback <br></a>
 </body>
 </html>
