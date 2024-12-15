@@ -25,6 +25,6 @@ This repository and its contents are licensed under the **https://github.com/Ham
 <b>Input Constraints:</b>
 
 Inputs must ensure that the height, initial speed, and range are physically valid. For example,<br> it’s impossible for a projectile to achieve a higher range with a slower speed unless there are other forces involved.
-<hr><a href="https://web.facebook.com/photo?fbid=1259451165330092&set=pcb.1259452985329910">please tell your feedback <br></a>
+<hr>please tell your feedback<a href="https://forms.gle/71VQ6DN52PPjnNbf7">Google form</a> or  <a href="https://web.facebook.com/photo?fbid=1259451165330092&set=pcb.1259452985329910">Facebook</a>
 </body>
 </html>
